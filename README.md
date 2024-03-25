@@ -1,2 +1,2 @@
 # kafka-stream
-This is Demo project to demonstrate The Dunctionality of Kafka-Stream 
+This is Demo project to demonstrate The Functionality of Kafka-Stream 
