@@ -12,7 +12,7 @@
 	<artifactId>kafka-stream</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kafka-stream</name>
-	<description>Demo project for kafka stream</description>
+	<description>kafka stream</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
