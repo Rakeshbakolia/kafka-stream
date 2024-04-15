@@ -5,7 +5,7 @@
 
 1.) Send messages in kafka using kafka-template and kafka-producer configuration.
 
-2.) Kafka-consumer configuration and polling data in kafka-consumer using @EventListiner.
+2.) Kafka-consumer configuration and polling data in kafka-consumer using @KafkaListener.
 
 3.) Kafka-stream configuration and stream data from an event.
 
@@ -13,11 +13,11 @@
 
 5.) Global state store to store data of all the partions of local-state-store.
 
-6.) Quering the data from global state store.
+6.) Querying the data from global state store.
 
 7.) Creation of custom Serdes.
 
-## Prerequsite
+## Prerequisite
 download kafka
 download link
 - [download-kafka](https://kafka.apache.org/downloads)
@@ -26,7 +26,7 @@ command to run kafka
 bin/zookeeper-server-start.sh config/zookeeper.properties
 bin/kafka-server-start.sh config/server.properties
 ```
-this will run your kafka on the machine
+this will run kafka on the machine
 
 ## Installation
 
