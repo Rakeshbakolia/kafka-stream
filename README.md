@@ -48,5 +48,6 @@ Clone/Fork the project and run
 
 ```http
   GET /api/v1/store/population
+  GET /actuator
 ```
 
