@@ -53,7 +53,7 @@ public class KafkaStreamConfig {
 
     @Bean
     public ProducerFactory<Long, Event> producerFactory() {
-        log.info("ProducerFactory running up");
+        log.info("ProducerFactory running up..");
         final Map<String, Object> config = new HashMap<>(4);
         config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, env.getProperty("spring.kafka.bootstrap-servers"));
         config.put(ConsumerConfig.GROUP_ID_CONFIG, env.getProperty("spring.kafka.consumer.group-id"));
