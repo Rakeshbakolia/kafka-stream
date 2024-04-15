@@ -1,5 +1,5 @@
 
-## Demonstraction of the functionality of kafka-producer, kafka-consumer, kafka-streams, local and global state store.
+## Demonstration of the functionality of kafka-producer, kafka-consumer, kafka-streams, local and global state store.
 
 ### What is in this project
 
