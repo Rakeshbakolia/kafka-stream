@@ -1,6 +1,7 @@
 package com.techi.kafkastream.config;
 
 import com.techi.kafkastream.model.Event;
+import com.techi.kafkastream.model.aggregation.EventAggregation;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
@@ -13,8 +14,15 @@ public class SerdeConfig extends Serdes.WrapperSerde<Event> {
     }
 
     public static Serde<Event> EventSerde(){
-        JsonSerializer<Event> eventJsonSerializer = new JsonSerializer<>();
-        JsonDeserializer<Event> eventJsonDeserializer = new JsonDeserializer<>();
+        final JsonSerializer<Event> eventJsonSerializer = new JsonSerializer<>();
+        final JsonDeserializer<Event> eventJsonDeserializer = new JsonDeserializer<>(Event.class);
         return Serdes.serdeFrom(eventJsonSerializer, eventJsonDeserializer);
     }
+
+    public static Serde<EventAggregation> populationSerde() {
+        final JsonSerializer<EventAggregation> polpulationJsonSerializer = new JsonSerializer<>();
+        final JsonDeserializer<EventAggregation> polpulationJsonDeserializer = new JsonDeserializer<>(EventAggregation.class);
+        return Serdes.serdeFrom(polpulationJsonSerializer, polpulationJsonDeserializer);
+    }
+
 }
